@@ -71,9 +71,47 @@ console.log(x,y);
 
 
 const averageAge = (ageJonas + ageLulu) / 2;
-console.log(ageJonas, ageLulu, averageAge);*/
+console.log(ageJonas, ageLulu, averageAge);
 
-//Coding Challenge #1
+ 
+
+const firstName = "Lucy";
+const currentJob = "Social Media Manager";
+const birthYear = 1997;
+const currentYear = 2024;
+
+const lucy = "I'm " + firstName + " , a" + " " + (currentYear - birthYear) + " " + currentJob;
+console.log(lucy);
+const lucyNew = `I'm ${firstName}, a ${currentYear - birthYear} year old ${currentJob}!`;
+console.log(lucyNew)
+
+console.log(`string with multiple lines \n
+are written on \n
+different lines`);
+
+console.log(`strings
+on multiple
+lines`); 
+
+const age = 15;
+
+ if(age >= 18) {
+  console.log(`You are old enough to get a license`);
+ } else{
+  const yearsLeft = 18 - age
+  console.log(`You are too young. Wait for another ${yearsLeft} years and apply again!`);
+ }
+
+ const birthYear = 1997;
+ let century;
+ if(birthYear <= 2000) {
+ century = 20;
+ } else{
+ century = 21;
+ }
+ console.log(century);
+
+ //Coding Challenge #1
 
 const markMass = 78;
 const johnMass = 92;
@@ -81,9 +119,14 @@ const markHeight = 1.69;
 const johnHeight = 1.95;
 const markBMI = markMass / (markHeight * markHeight);
 const johnBMI = johnMass / (johnHeight * johnHeight);
-const markHigherBMI = markBMI > johnBMI;
-console.log(Math.floor(johnBMI),Math.floor(markBMI),markHigherBMI);
+if(markBMI > johnBMI) {
+  console.log(`Mark's BMI is ${Math.floor(markBMI)}, higher than John's ${Math.floor(johnBMI)}!`);
+} else{
+  console.log(`John's BMI is ${johnBMI} higher than Mark's ${markBMI}!`)
+}
+//console.log(Math.floor(johnBMI),Math.floor(markBMI),markHigherBMI);
 
+/* 
 //Data 2
 const markMassTwo = 95;
 const markHeightTwo = 1.88;
@@ -92,4 +135,19 @@ const johnHeightTwo = 1.76;
 const markBMITwo = markMassTwo / (markHeightTwo * markHeightTwo);
 const johnBMITwo = johnMassTwo/ (johnHeightTwo * johnHeightTwo);
 const markHigherBMITwo = markBMITwo > johnBMITwo;
-console.log(Math.floor(markBMITwo), Math.floor(johnBMITwo), markHigherBMITwo);
+console.log(Math.floor(markBMITwo), Math.floor(johnBMITwo), markHigherBMITwo); */
+
+//type conversion
+const inputYear = "1997";
+console.log(Number(inputYear) , inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("lucy"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// type coercion
+console.log(`I am 23 years old`);
+console.log("23" - "10" - 3);
+console.log("23" * "2");
