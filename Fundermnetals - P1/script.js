@@ -303,8 +303,7 @@ if(teamOneBonusTwoScoreOne === teamTwoBonusTwoScoreOne && teamOneBonusTwoScoreOn
   console.log(`This is a draw`)
 } else{
   console.log(`No team wins the trophy`);
-} */
-
+} 
 //Switch Statement
 const day = "monday";
 switch(day){
@@ -330,4 +329,11 @@ switch(day){
   default:
     console.log("Invalid day")
 
-}
+} */
+
+const age = 27
+// age >= 18 ? console.log("I like to drink wine") :
+// console.log("I like to drink water");
+
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
