@@ -329,7 +329,9 @@ switch(day){
   default:
     console.log("Invalid day")
 
-} */
+} 
+
+//The Conditional(Ternary) Operator
 
 const age = 27
 // age >= 18 ? console.log("I like to drink wine") :
@@ -337,3 +339,31 @@ const age = 27
 
 const drink = age >= 18 ? "wine" : "water";
 console.log(drink);
+
+//Using template literals
+
+console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`); */
+
+//Coding Challenge #4
+
+const billOne = 275;
+const billTwo = 40;
+const billThree = 430;
+
+//const tip;
+// if(billOne >= 50 && billOne <= 300){
+//   tip = (15/100) * billOne;
+//   console.log(tip);
+// } else{
+//   tip = (20/100) * billOne;
+//   console.log(bill)
+// }
+
+const tip = billOne >=50 && billOne <= 300 ? (15/100) * billOne: (20/100) * billOne;
+console.log(`The bill was ${billOne}, and the tip was ${tip}, and the total value is ${billOne + tip}`);
+
+const tip2 = billTwo >=50 && billTwo <= 300 ? (15/100) * billTwo: (20/100) * billTwo;
+console.log(`The bill was ${billTwo}, and the tip was ${tip2}, and the total value is ${billTwo+ tip2}`);
+
+const tip3 = billThree >=50 && billThree <= 300 ? (15/100) * billTwo: (20/100) * billThree;
+console.log(`The bill was ${billThree}, and the tip was ${tip3}, and the total value is ${billThree+ tip3}`);
