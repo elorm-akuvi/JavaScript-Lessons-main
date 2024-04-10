@@ -106,9 +106,99 @@ function calcAge1(birthYear) {
  avgDolphins = calcAverage(85,54, 41);
  avgKoalas = calcAverage(23,34,27);
  console.log(avgDolphins, avgKoalas)
- checkWinner(avgDolphins, avgKoalas); */
-
+ checkWinner(avgDolphins, avgKoalas); 
 
  //Arrays
  const friends = ["Lucy", "Aku", "Elorm"];
  console.log(friends);
+
+ const years = new Array (1997, 1999, 2001, 2006);
+
+
+ console.log(friends[0]);
+ console.log(friends[2]);
+ console.log(friends.length);
+ console.log(friends[friends.length - 1]);
+
+ friends[2] = "Mercy";
+ console.log(friends);
+ const firstName = "Lucy";
+ const lucy = [firstName, "Ahadzi", 2024 - 1997, "Digital Marketer", friends];
+ console.log(lucy);
+ console.log(lucy.length);
+
+ //Exercise
+ const calcAge = function(birthYear) {
+  return 2024 - birthYear;
+ }
+ const birthYears = [1995, 1996, 1997, 1999, 2001, 2006];
+ const age1 = calcAge(birthYears[0]);
+ const age2 = calcAge(birthYears[1]);
+ const age3 = calcAge(birthYears[birthYears.length -1]);
+ console.log(age1, age2, age3);
+
+ const ages = [calcAge(birthYears[0]), calcAge(birthYears[1]), calcAge(birthYears[birthYears.length -1])];
+ console.log(ages); 
+ //Array Methods
+
+ //Add Elements
+ const friends = ["Lucy", "Aku", "Elorm"];
+ const newLength = friends.push("Mercy");
+ console.log(friends);
+ console.log(newLength);
+
+ friends.unshift("Bene");
+ console.log(friends);
+
+ //Remove Elements
+ friends.pop();
+ console.log(friends);
+
+ friends.shift();
+ console.log(friends);
+
+ console.log(friends.indexOf ("Aku"));
+
+ friends.push(23);
+ console.log(friends.includes ("Lucy"));
+ console.log(friends.includes("Samuel")); 
+
+
+ //Coding Challenge #2
+
+ function calcTip(bill) {
+  if(bill >= 50 && bill <= 300){
+     return (15/100) * bill;
+    } else{
+     return (20/100) * bill;
+    };
+ }
+ console.log(calcTip(100));
+
+ const bills = [125, 555, 44];
+ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length - 1])];
+ console.log(tips);
+ const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[tips.length-1] ];
+ console.log(total); */
+
+ //Objects
+
+ const lucy = {
+  firstName: "Lucy",
+  lastName: "Ahadzi",
+  age: 2024 - 1997,
+  job: "Digital Marketer",
+  friends: ["Elorm", "Aku", "Mercy"]
+ };
+ console.log(lucy);
+
+ //Dot vs Bracket Notation
+
+ console.log(lucy.lastName);
+ console.log(lucy["lastName"]);
+
+ const nameKey = "Name";
+ console.log(lucy["first" + nameKey]);
+ console.log(lucy["last" + nameKey]);
+
+ 
