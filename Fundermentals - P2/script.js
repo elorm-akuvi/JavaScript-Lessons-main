@@ -244,7 +244,7 @@ const lucy = {
 
  console.log(lucy.calcAge());
 
- console.log(lucy.getSummary()); */
+ console.log(lucy.getSummary());
 
  // Coding Challenge #3
 
@@ -271,6 +271,55 @@ const lucy = {
  if(mark.calcBMI() > john.calcBMI()) {
   console.log(`${mark.fullName}'s BMI(${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`);
  } else if (john.calcBMI() > mark.calcBMI()) {
-  console.log(`${john.fullName}'s BMI(${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})!`);
+  console.log(`${john.fullName}'s BMI(${this.BMI}) is higher than ${mark.fullName}'s (${this.BMI})!`);
+ }  */
+
+ // Loops
+
+//  for(let rep = 1; rep <= 10 ; rep++) {
+//   console.log(`Lifting weight repetition ${rep}`);
+//  }
+
+ const lucy = [
+  "Lucy",
+ "Ahadzi",
+  2024 - 1997,
+  "Digital Marketer",
+  ["Elorm", "Aku", "Mercy"],
+  true
+ ];
+
+ const types =[];
+
+ for (let i = 0; i < lucy.length; i++) {
+  // Reading from lucy array
+  console.log(lucy[i], typeof lucy[i]);
+
+
+  //Filling types array
+  // types[i] = typeof lucy[i];
+  types.push(typeof lucy[i]);
+ }
+ console.log(types);
+
+ const birthYears = [1995, 1996, 1997, 1999, 2001, 2006];
+ const ages =[];
+
+ for(let i= 0; i < birthYears.length; i++) {
+  ages.push(2037 - birthYears[i]);
+ }
+ console.log(ages);
+
+ // Continue and Break Statement
+
+ console.log("---ONLY STRINGS---")
+ for (let i = 0; i < lucy.length; i++) {
+  if(typeof lucy[i] !== "string") continue;
+  console.log(lucy[i], typeof lucy[i]);
  }
 
+ console.log("---BREAK WITH NUMBER---")
+ for (let i = 0; i < lucy.length; i++) {
+  if(typeof lucy[i] === "number") break;
+  console.log(lucy[i], typeof lucy[i]);
+ }
