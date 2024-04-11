@@ -272,7 +272,7 @@ const lucy = {
   console.log(`${mark.fullName}'s BMI(${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`);
  } else if (john.calcBMI() > mark.calcBMI()) {
   console.log(`${john.fullName}'s BMI(${this.BMI}) is higher than ${mark.fullName}'s (${this.BMI})!`);
- }  */
+ } 
 
  // Loops
 
@@ -322,4 +322,25 @@ const lucy = {
  for (let i = 0; i < lucy.length; i++) {
   if(typeof lucy[i] === "number") break;
   console.log(lucy[i], typeof lucy[i]);
+ } */
+
+ const lucy = [
+  "Lucy",
+ "Ahadzi",
+  2024 - 1997,
+  "Digital Marketer",
+  ["Elorm", "Aku", "Mercy"],
+  true
+ ];
+
+ for(let i = lucy.length -1; i >=0; i--){
+  console.log(i, lucy[i]);
  }
+
+ for(let exercise = 1; exercise <= 3;  exercise++) {
+  console.log(`--------Starting Exercise ${exercise}--------`);
+  for(let rep = 1; rep <= 6; rep++) {
+    console.log(`........Lifting Weight Repetition ${rep}........`)
+  }
+ }
+
