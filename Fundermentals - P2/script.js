@@ -322,7 +322,7 @@ const lucy = {
  for (let i = 0; i < lucy.length; i++) {
   if(typeof lucy[i] === "number") break;
   console.log(lucy[i], typeof lucy[i]);
- } */
+ }
 
  const lucy = [
   "Lucy",
@@ -339,8 +339,21 @@ const lucy = {
 
  for(let exercise = 1; exercise <= 3;  exercise++) {
   console.log(`--------Starting Exercise ${exercise}--------`);
-  for(let rep = 1; rep <= 6; rep++) {
-    console.log(`........Lifting Weight Repetition ${rep}........`)
+  for(let rep = 1; rep <= 5; rep++) {
+    console.log(`Exercise ${exercise}: ........Lifting Weight Repetition ${rep}........`)
   }
+ }  */
+
+ // While Loop
+
+ for(let rep = 1; rep <= 10 ; rep++) {
+    console.log(`Lifting weight repetition ${rep}`);
  }
+
+ let rep = 1;
+ while(rep <= 10) {
+  console.log(`WHILE: Lifting weight repetition ${rep}`);
+  rep++;
+ }
+  
 
