@@ -342,18 +342,58 @@ const lucy = {
   for(let rep = 1; rep <= 5; rep++) {
     console.log(`Exercise ${exercise}: ........Lifting Weight Repetition ${rep}........`)
   }
- }  */
+ }  
 
  // While Loop
 
- for(let rep = 1; rep <= 10 ; rep++) {
-    console.log(`Lifting weight repetition ${rep}`);
- }
-
  let rep = 1;
  while(rep <= 10) {
-  console.log(`WHILE: Lifting weight repetition ${rep}`);
+  // console.log(`WHILE: Lifting weight repetition ${rep}`);
   rep++;
  }
-  
+
+ let diceRoll =Math.trunc(Math.random() * 6) + 1;
+ console.log(diceRoll);
+
+ while(diceRoll !== 6){
+  console.log(`You rolled a ${diceRoll}`);
+  diceRoll = Math.trunc(Math.random() * 6 ) + 1;
+  if(diceRoll === 6) {
+    console.log(`Loop is about to end`);
+  }
+ } */
+
+ // Coding Challenge #4
+
+ function calcTip(bill) {
+  if(bill >= 50 && bill <= 300){
+     return (15/100) * bill;
+    } else{
+     return (20/100) * bill;
+    };
+  }
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+  for(let i = 0 ; i <= bills.length-1; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+  }
+  console.log(bills, tips, totals);
+
+
+  function calcAverage(arr) {
+    let sum = 0;
+    for(let i = 0; i <= arr.length -1; i++) {
+      sum += arr[i];
+    }
+    return sum / arr.length
+  }
+
+ console.log( calcAverage([2,3,7]));
+ console.log(calcAverage(tips));
+ console.log(calcAverage(totals));
 
