@@ -363,37 +363,35 @@ const lucy = {
   }
  } */
 
- // Coding Challenge #4
+// Coding Challenge #4
 
- function calcTip(bill) {
-  if(bill >= 50 && bill <= 300){
-     return (15/100) * bill;
-    } else{
-     return (20/100) * bill;
-    };
+function calcTip(bill) {
+  if (bill >= 50 && bill <= 300) {
+    return (15 / 100) * bill;
+  } else {
+    return (20 / 100) * bill;
   }
+}
 
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];
 
-  for(let i = 0 ; i <= bills.length-1; i++) {
-    const tip = calcTip(bills[i]);
-    tips.push(tip);
-    totals.push(tip + bills[i]);
+for (let i = 0; i <= bills.length - 1; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
+}
+console.log(bills, tips, totals);
+
+function calcAverage(arr) {
+  let sum = 0;
+  for (let i = 0; i <= arr.length - 1; i++) {
+    sum += arr[i];
   }
-  console.log(bills, tips, totals);
+  return sum / arr.length;
+}
 
-
-  function calcAverage(arr) {
-    let sum = 0;
-    for(let i = 0; i <= arr.length -1; i++) {
-      sum += arr[i];
-    }
-    return sum / arr.length
-  }
-
- console.log( calcAverage([2,3,7]));
- console.log(calcAverage(tips));
- console.log(calcAverage(totals));
-
+console.log(calcAverage([2, 3, 7]));
+console.log(calcAverage(tips));
+console.log(calcAverage(totals));

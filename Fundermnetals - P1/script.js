@@ -359,11 +359,28 @@ const billThree = 430;
 //   console.log(bill)
 // }
 
-const tip = billOne >=50 && billOne <= 300 ? (15/100) * billOne: (20/100) * billOne;
-console.log(`The bill was ${billOne}, and the tip was ${tip}, and the total value is ${billOne + tip}`);
+const tip =
+  billOne >= 50 && billOne <= 300 ? (15 / 100) * billOne : (20 / 100) * billOne;
+console.log(
+  `The bill was ${billOne}, and the tip was ${tip}, and the total value is ${
+    billOne + tip
+  }`
+);
 
-const tip2 = billTwo >=50 && billTwo <= 300 ? (15/100) * billTwo: (20/100) * billTwo;
-console.log(`The bill was ${billTwo}, and the tip was ${tip2}, and the total value is ${billTwo+ tip2}`);
+const tip2 =
+  billTwo >= 50 && billTwo <= 300 ? (15 / 100) * billTwo : (20 / 100) * billTwo;
+console.log(
+  `The bill was ${billTwo}, and the tip was ${tip2}, and the total value is ${
+    billTwo + tip2
+  }`
+);
 
-const tip3 = billThree >=50 && billThree <= 300 ? (15/100) * billTwo: (20/100) * billThree;
-console.log(`The bill was ${billThree}, and the tip was ${tip3}, and the total value is ${billThree+ tip3}`);
+const tip3 =
+  billThree >= 50 && billThree <= 300
+    ? (15 / 100) * billTwo
+    : (20 / 100) * billThree;
+console.log(
+  `The bill was ${billThree}, and the tip was ${tip3}, and the total value is ${
+    billThree + tip3
+  }`
+);
