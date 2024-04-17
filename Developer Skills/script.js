@@ -15,9 +15,11 @@ const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
 //-Find min value in temp array
 // Subtract min from max (amplitude) and return it
 
+//Using a Debugger
 // function calcTempAmplitude(temps) {
 //   let max = temps[0];
 //   let min = temps[0];
+
 //   for (let i = 0; i < temps.length; i++) {
 //     const curTemp = temps[i];
 //     if(typeof curTemp !== "number") continue;
@@ -36,43 +38,46 @@ const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
 
 // Coding Challenge #1
 
-// 1. Understanding the Problem
+//1. Understanding the Problem
 //Array of strings print the forecast for the upcoming days
 
-// let tempList = [17, 21, 23];
-// function printForecast(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     console.log(
-//       `${arr[i]} degrees celsius in ${i + 1} day${i === 0 ? "" : "s"}...`
-//     );
+let tempList = [17, 21, 23];
+function printForecast(arr) {
+  let str = "";
+  for (let i = 0; i < arr.length; i++) {
+    str += `${arr[i]}ºC in ${i+1} days ...`
+    // console.log(
+    //   `${arr[i]} degrees celsius in ${i + 1} day${i === 0 ? "" : "s"}...`
+    // );
+  }
+  console.log("..." + str);
+}
+printForecast(tempList);
+
+console.log("------DATASET TWO-------");
+
+tempList = [12, 5, -5, 0, 4];
+console.log(printForecast(tempList));
+
+// function measureKelvin() {
+//   const measurement = {
+//     type: "temp",
+//     unit: "celsius",
+//     //C. Fix the bug
+
+//     value: 10,
 //   };
+
+//   //B Find the bug
+//   console.table(measurement);
+
+//   // console.log(measurement.value);
+//   // console.warn(measurement.value);
+//   // console.error(measurement.value);
+
+//   const kelvin = measurement.value + 273;
+//   return kelvin;
 // };
-// printForecast(tempList);
 
-// console.log("------DATASET TWO-------")
-
-// tempList = [12, 5, -5, 0, 4];
-// console.log(printForecast(tempList));
-
-
-function measureKelvin() {
-  const measurement = {
-    type: "temp",
-    unit: "celsius",
-    //C. Fix the bug
-    value: Number(prompt("Degree Celsius")),
-  };
-
-  //B Find the bug
-  console.table(measurement);
-
-  // console.log(measurement.value);
-  // console.warn(measurement.value);
-  // console.error(measurement.value);
-
-  const kelvin = measurement.value + 273;
-  return kelvin;
-};
-
-//A. Identify the Problem
-console.log(measureKelvin());
+// //A. Identify the Problem
+// console.log(measureKelvin());
