@@ -39,16 +39,40 @@ const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
 // 1. Understanding the Problem
 //Array of strings print the forecast for the upcoming days
 
-let tempList = [17, 21, 23];
-function printForecast(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    console.log(
-      `${arr[i]} degrees celsius in ${i + 1} day${i === 0 ? "" : "s"}...`
-    );
-  }
-}
-printForecast(tempList);
+// let tempList = [17, 21, 23];
+// function printForecast(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(
+//       `${arr[i]} degrees celsius in ${i + 1} day${i === 0 ? "" : "s"}...`
+//     );
+//   };
+// };
+// printForecast(tempList);
 
-console.log("------DATASET TWO-------")
-tempList = [12, 5, -5, 0, 4];
-console.log(printForecast(tempList));
+// console.log("------DATASET TWO-------")
+
+// tempList = [12, 5, -5, 0, 4];
+// console.log(printForecast(tempList));
+
+
+function measureKelvin() {
+  const measurement = {
+    type: "temp",
+    unit: "celsius",
+    //C. Fix the bug
+    value: Number(prompt("Degree Celsius")),
+  };
+
+  //B Find the bug
+  console.table(measurement);
+
+  // console.log(measurement.value);
+  // console.warn(measurement.value);
+  // console.error(measurement.value);
+
+  const kelvin = measurement.value + 273;
+  return kelvin;
+};
+
+//A. Identify the Problem
+console.log(measureKelvin());
